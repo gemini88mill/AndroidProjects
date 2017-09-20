@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">QPXExpressFlights</string>
+    <string name="origin_label">Origin</string>
+    <string name="destination_label">Destination</string>
+    <string name="airport_input_field">City, IATA, or Airport Name</string>
+    <string name="date_input_field">mm/dd/yyyy</string>
+    <string name="radio_one_way">One Way</string>
+    <string name="radio_round_trip">Round Trip</string>
+    <string name="radio_multi_destination">multi</string>
+    <string name="submit_button">Submit</string>
+    <string name="departing_label">departing</string>
+    <string name="returing_label">returning</string>
+    <string name="resultsLabel">Results</string>
+</resources>

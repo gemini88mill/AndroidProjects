@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.raphaelmiller.apa9ball.MainActivity">
+
+    <EditText
+        android:id="@+id/playerTwoName"
+        android:layout_width="251dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/player_two"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerOneName" />
+
+    <EditText
+        android:id="@+id/playerOneName"
+        android:layout_width="251dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:hint="@string/player_one"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/playerOneSkill"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/skill_one"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/playerOneName"
+        app:layout_constraintLeft_toRightOf="@+id/playerOneName" />
+
+    <EditText
+        android:id="@+id/playerTwoSkill"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/skill_two"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/playerTwoName"
+        app:layout_constraintLeft_toRightOf="@+id/playerTwoName" />
+
+    <TextView
+        android:id="@+id/skillLevelLabel"
+        android:layout_width="120dp"
+        android:layout_height="26dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/skill_label"
+        app:layout_constraintBaseline_toBaselineOf="@+id/oneLabel"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="@string/skill_label" />
+
+    <TextView
+        android:id="@+id/playerTwoLabel"
+        android:layout_width="166dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/label"
+        app:layout_constraintBottom_toTopOf="@+id/playerTwoName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:text="@string/label" />
+
+    <TextView
+        android:id="@+id/oneLabel"
+        android:layout_width="166dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/label"
+        app:layout_constraintBottom_toTopOf="@+id/playerOneName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:text="@string/label" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="44dp"
+        android:onClick="sendBundle"
+        android:text="@string/button"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerTwoSkill"
+        tools:text="@string/button" />
+</android.support.constraint.ConstraintLayout>
